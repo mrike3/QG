@@ -1,0 +1,26 @@
+{
+  "name": "qgvite",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@kjgl77/datav-vue3": "^1.7.3",
+    "axios": "^1.7.2",
+    "core-js": "^3.37.1",
+    "element-plus": "^2.7.7",
+    "jquery": "^3.7.1",
+    "pinia": "^2.1.7",
+    "vue": "^3.4.29",
+    "vue-router": "^4.4.0",
+    "vuesax": "^4.0.1-alpha.25"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.5",
+    "vite": "^5.3.1"
+  }
+}
