@@ -12,7 +12,7 @@ axiosapi.interceptors.request.use((req)=>{
         return req
     }
     if(token==null){
-        window.location.href='http://localhost:5173/#/login'
+        window.location.href='http://localhost:5173/login'
         return Promise.reject('please frist login your admin！')
     }else{
         var oldtime=sessionStorage.getItem('oldtime')
@@ -21,7 +21,7 @@ axiosapi.interceptors.request.use((req)=>{
         if(cha>30 ){
             sessionStorage.removeItem('token')
             sessionStorage.removeItem('oldtime')
-            window.location.href='http://localhost:5173/#/login'
+            window.location.href='http://localhost:5173/login'
             return Promise.reject('please frist login your admin！')
         }else {
             req.headers['Authorization'] = token

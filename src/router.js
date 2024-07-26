@@ -1,8 +1,12 @@
-import {createRouter,createWebHashHistory} from "vue-router";
+import {createRouter,createWebHistory} from "vue-router";
 import login from './views/login/login.vue'
 import homepage from './views/homepage/homepage.vue'
 
 const routers1=[
+    {
+        path:'/',
+        component:login
+    },
     {
         path:'/login',
         component:login
@@ -13,7 +17,7 @@ const routers1=[
     }
 ]
 const router=createRouter({
-    history:createWebHashHistory(),
+    history:createWebHistory(),
     routes:routers1
 })
 router.beforeEach((to,from,next)=>{
