@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/QG/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QG</title>
+    <script type="module" crossorigin src="/QG/assets/index-CkpqBcGo.js"></script>
+    <link rel="stylesheet" crossorigin href="/QG/assets/index-BVS2yUNI.css">
+  </head>
+  <script src="/QG/js/particles.min.js"></script>
+  <style>
+      body{
+          margin: 0px;
+          padding: 0px;
+      }
+      #b{
+          width: 100%;
+          height: 100vh;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          z-index: -1;
+      }
+  </style>
+  <body>
+    <div id="app"></div>
+    <canvas id="b"></canvas>
+  </body>
+  <script>
+      window.onload = function () {
+          Particles.init({
+              selector: "#b"
+          });
+      };
+      var particles = Particles.init({
+          selector: "#b",
+          color: ["#03dac6", "#ff0266", "#000000"],
+          connectParticles: true,
+          responsive: [
+              {
+                  breakpoint: 768,
+                  options: {
+                      color: ["#faebd7", "#03dac6", "#ff0266"],
+                      maxParticles: 43,
+                      connectParticles: false
+                  }
+              }
+          ]
+      });
+  </script>
+</html>
