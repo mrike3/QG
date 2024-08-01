@@ -44,7 +44,7 @@ export const loginStore = defineStore('login', {
                         message:'登陆成功',
                         plain:true
                     })
-                    window.location.href = '/homepage'
+                    window.location.href = '/QG/homepage'
                 }
             }).catch(e => {
                 ElMessageBox.alert(e,'错误提示')

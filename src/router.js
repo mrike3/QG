@@ -4,15 +4,15 @@ import homepage from './views/homepage/homepage.vue'
 
 const routers1=[
     {
-        path:'/',
+        path:'/QG',
         component:login
     },
     {
-        path:'/login',
+        path:'/QG/login',
         component:login
     },
     {
-        path:'/homepage',
+        path:'/QG/homepage',
         component:homepage
     }
 ]
@@ -24,10 +24,10 @@ router.beforeEach((to,from,next)=>{
     //测试数据可以删除
     // next()
     if(sessionStorage.getItem('token')==null){
-        if(to.path=='/login'){
+        if(to.path=='/QG/login'){
             next()
         }else{
-            next('/login')
+            next('/QG/login')
         }
     }else{
         var oldtime=sessionStorage.getItem('oldtime')
@@ -36,7 +36,7 @@ router.beforeEach((to,from,next)=>{
         if(cha>30){
             sessionStorage.removeItem('token')
             sessionStorage.removeItem('oldtime')
-            next('login')
+            next('/QG/login')
         }else{
             next()
         }

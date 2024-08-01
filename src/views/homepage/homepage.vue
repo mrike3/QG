@@ -4,7 +4,6 @@ import mailList from './components/mailList.vue'
 import $http from '../../../public/js/axiosapi.js'
 import {homeStore} from "./homeStore.js";
 import {onBeforeMount, ref} from 'vue'
-import Dflex from "../../components/flex.vue";
 
 const store=homeStore()
 onBeforeMount(()=>{

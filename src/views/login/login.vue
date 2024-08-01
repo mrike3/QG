@@ -28,7 +28,7 @@ const counter =loginStore()
       </el-col>
       <el-col :span="12">
         <el-row style="flex-direction: column" align="middle">
-          <img src="../../../public/Ant.svg" width="60px">
+          <img src="/Ant.svg" width="60px">
           <h1>QG Login</h1>
           <dv-decoration-3 style="width:330px;height:40px;" />
           <dv-decoration-2 style="width:330px;height:5px;" />
